@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sarthak.firebasesignin.activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_email"
+        android:layout_marginBottom="75dp">
+
+        <TextView
+            android:id="@+id/headline"
+            android:text="Firebase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="64sp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Sign In Example App"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headline"
+            android:textSize="22sp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_above="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_hint_email"
+        android:background="@drawable/inputoutline"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_above="@+id/login_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_hint_password"
+        android:background="@drawable/inputoutline"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/login_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/google_sign_in"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:layout_marginBottom="10dp"
+        android:text="@string/login_log_in"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fb_sign_in"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:layout_marginBottom="10dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fb_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_frame"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginEnd="@dimen/button_margin" />
+
+    <LinearLayout
+        android:id="@+id/linear_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginEnd="@dimen/button_margin">
+
+        <Button
+            android:id="@+id/login_forgot_pass_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/login_forgot_password"
+            android:background="#00000000"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/login_register_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/login_sign_up"
+            android:background="#00000000"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

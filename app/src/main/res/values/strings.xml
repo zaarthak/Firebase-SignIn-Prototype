@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FirebaseSignIn</string>
+
+    <string name="facebook_app_id">253957681757707</string>
+    <string name="fb_login_protocol_scheme">fb253957681757707</string>
+
+    <!-- Strings related to Login Activity -->
+    <string name="login_log_in">LOG IN</string>
+    <string name="login_sign_up">New user? Sign up</string>
+    <string name="login_progress_dialog_title">Logging in…</string>
+    <string name="login_progress_dialog_message">Please wait while we log you in</string>
+    <string name="login_error_message">Username and password combination not correct.</string>
+
+    <!-- Strings related to Register Activity -->
+    <string name="register_activity_title">Create a new account</string>
+    <string name="register_progress_dialog_title">Registering User…</string>
+    <string name="register_progress_dialog_message">Please wait while we setup things</string>
+    <string name="register_hint_name">Name</string>
+    <string name="register_hint_email">Email Address</string>
+    <string name="register_hint_password">Password</string>
+    <string name="register_create_account">CREATE A NEW ACCOUNT</string>
+    <string name="login_forgot_password">Forgot Password</string>
+
+    <!-- Other strings -->
+    <string name="auth_failed">Authorisation failed.</string>
+    <string name="menu_log_out">Log out</string>
+</resources>
